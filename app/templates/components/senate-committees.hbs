@@ -1,5 +1,5 @@
 <ul>
   {{#each senateCommittees as |committee|}}
-    <li>{{committee.name}}</li>
+    {{#link-to 'committee' committee.committee_id}}<li>{{committee.name}}</li>{{/link-to}}
   {{/each}}
 </ul>
