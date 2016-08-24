@@ -1,0 +1,6 @@
+<h1> Recent Bills:</h1>
+<ul>
+  {{#each model as |bill|}}
+    <li>{{bill.official_title}} Introduced on: {{bill.introduced_on}}</li><br>
+  {{/each}}
+</ul>

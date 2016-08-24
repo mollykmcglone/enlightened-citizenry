@@ -1,0 +1,8 @@
+<h1> Bills up for a vote soon:</h1>
+  <ul>
+    {{#each model as |bill|}}
+      <li>{{bill.official_title}}<br></li>
+    {{else}}
+    <h3>There are no upcoming votes as Congress is in recess.</h3>
+    {{/each}}
+  </ul>
